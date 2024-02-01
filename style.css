@@ -1,4 +1,146 @@
-*
-{
-    background-color: red;
+:root {
+    --side: #223843;
+    --toppar: #DBD3D8;
+    --ampiunt: #EFF1F3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr;
+    height: 100vh;
+}
+
+.sidepanel {
+    background-color: var(--side);
+    color: var(--ampiunt);
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    /* gap: 10px; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,1fr);
+    justify-content: center; */
+}
+
+.logo {
+    /* padding: 20px; */
+    font-size: calc(40px + 1vw);
+    /* align-self: self-start; */
+    justify-self: center;
+    font-weight: bold;
+
+}
+
+.links {
+    padding: 10PX;
+    font-size: calc(12px + 0.5vw);
+    font-weight: bold;
+    /* height: 60px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.icon {
+    width: calc(12px + 0.5vw);
+}
+
+.Third {
+    display: grid;
+    height: 33%;
+}
+
+.mainboard {
+    background-color: var(--ampiunt);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.navbar {
+    background-color: var(--toppar);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding: 1vh;
+}
+
+.search {
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--ampiunt);
+    
+    margin-left: 10px;
+}
+
+.lineone {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.lineTwo {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 10PX;
+    align-items: center;
+}
+
+.lineTwo button {
+    height: 40px;
+    background-color: var(--side);
+    color: var(--ampiunt);
+    border-radius: 20px;
+    width: 100px;
+}
+
+.mainbody {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.cards {
+    background-color: var(--ampiunt);
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    /* grid-template-rows: 1fr 1fr; */
+
+}
+
+
+.card {
+    background-color: var(--toppar);
+    margin: 10px;
+    padding: 20px;
+}
+
+.activities {
+    background-color: var(--toppar-);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    gap: 10px;
+}
+
+.announcement,
+.trednding {
+    background-color: var(--toppar);
+}
+
+.header {
+    font-size: calc(30px + 0.5vw);
+}
+
+.miniheader {
+    font-size: calc(20px + 0.5vw);
+}
+
+.footer {
+    background-color: var(--toppar);
+    text-align: center;
+    width: 100%;
 }
